@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="./images/logo.png">
     <script src="./js/minMaj.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -15,13 +16,18 @@
 <body class="bg-light-subtle py-5">
 
     <div class="container">
-        <header class="mb-4">
-            <h1 class="h3 fw-bold text-body">
-                <i class="bi bi-flask text-success me-2"></i>OddCode #1 — Convertisseur de MAJ <i
-                    class="bi bi-arrow-left-right mx-1 fs-5 blood"></i> min
-            </h1>
-            <p class="text-body-secondary small mb-0">Tapez ou collez votre texte ci-dessous pour le convertir
-                instantanément.</p>
+        <header class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+            <div>
+                <h1 class="h3 fw-bold text-body mb-1">
+                    <i class="bi bi-flask text-success me-2"></i>OddCode #1 — Convertisseur de MAJ
+                    <i class="bi bi-arrow-left-right mx-1 fs-5 text-danger"></i> min
+                </h1>
+                <p class="text-body-secondary small mb-0">
+                    Tapez ou collez votre texte ci-dessous pour le convertir instantanément.
+                </p>
+            </div>
+            <img src="./images/logo.png" alt="Logo OddCode" class="img-fluid flex-shrink-0 ms-3"
+                style="max-height: 60px; width: auto;" />
         </header>
 
         <main class="row g-3 align-items-center">
@@ -29,7 +35,8 @@
             <div class="col-12 col-md">
                 <div class="card shadow-sm border-1">
                     <div class="card-header bg-body d-flex justify-content-between align-items-center py-2">
-                        <span id="iInput" class="fw-semibold text-body"><i class="bi bi-type me-1 text-success"></i> Texte
+                        <span id="iInput" class="fw-semibold text-body"><i class="bi bi-type me-1 text-success"></i>
+                            Texte
                             minuscule</span>
                         <span id="count-input" class="badge text-bg-light border font-monospace fw-normal">0
                             caract.</span>
@@ -58,7 +65,8 @@
             <div class="col-12 col-md">
                 <div class="card shadow-sm border-1">
                     <div class="card-header bg-body d-flex justify-content-between align-items-center py-2">
-                        <span id="iOutput" class="fw-semibold text-body"><i class="bi bi-type-h1 me-1 text-primary"></i> Texte en
+                        <span id="iOutput" class="fw-semibold text-body"><i class="bi bi-type-h1 me-1 text-primary"></i>
+                            Texte en
                             MAJUSCULE</span>
                         <button id="btn-copy" class="btn btn-sm btn-outline-secondary">
                             <i class="bi bi-clipboard me-1"></i> Copier
